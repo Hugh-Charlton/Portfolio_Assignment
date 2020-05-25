@@ -38,4 +38,4 @@ Git Repository
 https://github.com/Hugh-Charlton/Portfolio_Assignment.git
 
 Netlify
-hugh-charlton-portfolio.netlify.app
+hugh-charlton-portfolio.netlify.app 
