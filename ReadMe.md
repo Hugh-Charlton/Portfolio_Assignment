@@ -36,3 +36,6 @@ This site is mainly targetted at prosepective employers, however there is a wide
 
 Git Repository
 https://github.com/Hugh-Charlton/Portfolio_Assignment.git
+
+Netlify
+hugh-charlton-portfolio.netlify.app
