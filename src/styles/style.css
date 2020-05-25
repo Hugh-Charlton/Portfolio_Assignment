@@ -1,0 +1,256 @@
+@import "partials/profile";
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-align: center;
+    background-color: #071e3d;
+    color: #e2f3f5;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 2em;
+}
+
+.link {
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #21e6c1;
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: #21e6c1;
+}
+
+a:active {
+    text-decoration: none;
+    color: #21e6c1;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #21e6c1;
+    background-color: #071e3d;
+}
+
+::placeholder {
+    color: grey;
+}
+
+#form-button {
+    border-radius: 25px;
+    width: 80px;
+    height: 35px;
+    margin: 0px 0px 0px 0px;
+}
+
+.nav {
+    position: sticky;
+    top: 0vh;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    background-color: #1f4287;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skill {
+    font-size: 15px;
+    margin: 5px;
+    border: 2px black solid;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    color: #071e3d;
+}
+
+.ruby {
+    width: 80px;
+    height: 80px;
+}
+
+.html-pic {
+    width: 80px;
+    height: 80px;
+}
+
+.css {
+    width: 57px;
+    height: 80px;
+}
+
+#Wiz {
+    width: 50%;
+    height: 50%;
+}
+
+.blogs {
+    text-align: left;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #0a2a53;
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #0a2a53;
+    margin: -16px;
+}
+
+.content img {
+    float: right;
+}
+
+#one {
+    width: 200px;
+    height: 133px;
+}
+
+#two {
+    width: 200px;
+    height: 207px;
+}
+
+#three {
+    width: 275px;
+}
+
+#four {
+    width: 480px;
+    height: 163px;  
+}
+
+#five {
+    width: 214px;
+    height: 182px;  
+}
+
+hr {
+    width: 95%;
+    height: 1px;
+    border: none;
+    background-color: rgb(199, 199, 199);
+}
+
+#name {
+    width: 250px;
+}
+
+#email {
+    width: 250px;
+}
+
+#message {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    margin-bottom: -10px;
+}
+
+.about {
+    margin: 5px;
+}
+
+.github {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+    width: 70%;
+}
+
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    body {font-size: 20px;}
+    .skill {margin: 15px; height: 155px;}
+    .link {padding: 10px 25px 10px 25px; margin: 0px 4vw 0px 4vw;}
+    #message {margin-bottom: -10px;}
+    .content {font-size: 15px;}
+    #two {width: 100px; height: 104px;}
+    #five {width: 107px; height: 91px;}
+  }
+  
+  @media only screen and (min-width: 800px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body {font-size: 25px;}
+    .skill {margin: 20px; width: 200px; height: 200px;}
+    .link {padding: 10px 25px 10px 25px; margin: 0px 8vw 0px 8vw;}
+    #message {margin-bottom: -20px;}
+    .content {font-size: 15px;}
+    #Wiz {width: 309px; height: 196px;}
+  }
+
+  footer {
+    position: absolute;
+    color: rgb(199, 199, 199);
+    bottom: 0px;
+    margin: 5px;
+    text-align: left;
+    font-size: 10px;
+  }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Blog</title>
+    </head>
+
+    <body>
+
+        <div class="nav">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="portfolio.html">Portfolio</a>
+            <a class="link" href="blog.html">Blog</a>
+            <a class="link" href="contact.html">Contact</a>
+        </div>
+
+        <h2>Blog</h2>
+
+        <div class="blogs">
+            <div class="collapsible">
+                <h3>#1 Blog</h3>
+                <p>1/1/2020</p>
+            </div>
+
+            <div class="content">
+                <img id="one" src="../docs/workspace.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ligula tristique, luctus nulla ac, sodales mi. 
+                    Sed tincidunt sollicitudin odio, ac commodo est sagittis tincidunt. Vivamus ut lacinia dolor. Nulla eget lacinia mauris, sit amet consequat diam. 
+                    Mauris consequat sem at aliquet venenatis. Curabitur et consequat dui. Praesent sed eros cursus, vestibulum neque et, maximus massa. 
+                    Donec in eros vel tortor viverra tempus. Maecenas nec elementum eros, lobortis accumsan odio. Duis congue ac dolor quis lacinia. 
+                    Duis elit urna, congue eu purus id, tempus vestibulum mauris.
+                </p>
+                <hr>
+            </div>
+
+            <div class="collapsible">
+                <h3>#2 Blog</h3>
+                <p>5/1/2020</p>
+            </div>
+
+            <div class="content">
+                <img id="two" src="../docs/motherboard.jpg">
+                <p>
+                    Phasellus ipsum justo, interdum a ex sit amet, porta molestie purus. Morbi sit amet orci id lorem egestas vulputate quis id mi. 
+                    Ut fermentum sed magna sed facilisis. In consectetur, eros in facilisis cursus, risus dui congue odio, quis gravida dui dui faucibus arcu. 
+                    Donec sagittis blandit lacus non dignissim. Curabitur a erat a sapien cursus fermentum. Cras a dui est. 
+                    Cras a metus nisi. Nam efficitur, diam at vehicula commodo, urna lectus porttitor leo, eu tincidunt augue lacus quis ex. 
+                    Nullam pulvinar eros eget sapien ornare tincidunt.
+                </p>
+                <hr>
+            </div>
+
+            <div class="collapsible">
+                <h3>#3 Blog</h3>
+                <p>9/1/2020</p>
+            </div>
+
+            <div class="content">
+                <img id="three" src="../docs/office.jpg">
+                <p>
+                    Cras ut ex dolor. Donec feugiat vulputate erat a faucibus. Aenean tincidunt eros in lorem tristique, placerat condimentum lorem fermentum. 
+                    Nullam bibendum sollicitudin dolor vel vulputate. Aliquam leo diam, aliquam eget ligula ut, faucibus elementum turpis. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse tortor quam, facilisis non mauris sed, consequat cursus urna. 
+                    Fusce ultrices leo ac sagittis convallis. Proin a leo aliquam, fringilla lacus nec, faucibus dolor. 
+                    Donec posuere diam in purus dignissim, eget tristique ligula lobortis. Curabitur id pellentesque nisi, vitae elementum enim. 
+                    Proin malesuada pretium risus sed luctus. Nam pellentesque molestie sagittis. Nam efficitur sollicitudin urna ut feugiat. 
+                    Phasellus libero nibh, luctus sit amet suscipit vel, mattis eu lacus.
+                </p>
+                <hr>
+            </div>
+
+            <div class="collapsible">
+                <h3>#4 Blog</h3>
+                <p>13/1/2020</p>
+            </div>
+
+            <div class="content">
+                <img id="four" src="../docs/park.jpg">
+                <p>
+                    Aliquam erat volutpat. Cras ut velit sapien. Praesent non malesuada sapien. Duis enim nibh, consectetur quis aliquam in, bibendum eu magna. 
+                    Aliquam diam erat, volutpat sed ligula in, pharetra aliquam felis. Aliquam et mollis ligula. Vivamus laoreet purus et nibh ultricies imperdiet. 
+                    Proin blandit velit ut sem bibendum varius et ac ipsum. Maecenas vitae tellus interdum, porttitor nisi ut, aliquet leo. 
+                    Sed venenatis ipsum elit, in dapibus metus pretium non. In dignissim, ipsum vel egestas accumsan, justo urna porttitor velit, tempor luctus velit enim et risus.
+                </p>
+                <hr>
+            </div>
+
+            <div class="collapsible">
+                <h3>#5 Blog</h3>
+                <p>17/1/2020</p>
+            </div>
+
+            <div class="content">
+                <img id="five" src="../docs/yikes.jpg">
+                <p>
+                    In eget elit erat. Mauris nisl purus, accumsan in erat non, posuere congue nisl. Quisque fermentum molestie porta. 
+                    Praesent lectus sem, efficitur nec laoreet et, ullamcorper et tortor. Vivamus ut convallis nulla. 
+                    Vivamus maximus lacus at justo dictum, quis placerat est scelerisque. Nunc mollis dui id accumsan tristique. 
+                    Phasellus pellentesque nunc justo, eu tristique dui feugiat eget. 
+                    Mauris fringilla, lorem in suscipit tincidunt, lorem augue ornare massa, vitae porttitor lacus elit sed diam. Nam semper elementum felis vel consequat.
+                </p>
+                <hr>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </body>
